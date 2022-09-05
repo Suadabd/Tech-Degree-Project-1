@@ -1,0 +1,1 @@
+This project was created as a part of my Tech degree course on Tree House. I used Java script to create a Random Quote Generator. Each time the "show another Quote" buton is pushed a new quote should display. 
