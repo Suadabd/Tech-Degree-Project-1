@@ -23,7 +23,7 @@ source: '-Walt Disney',
 //citation:
 //year:
 },
-{quote: "If life were predictable it would cease to be life, and be without flavor.",
+{quote:"If life were predictable it would cease to be life, and be without flavor.",
 source:'-Elenor Roosevelt',
 //citation:
 //year:
@@ -44,9 +44,9 @@ source: 'Steve Jobs',
  * `getRandomQuote` function
  * The `getRandomQuote` function provides a random quote from the array above. 
 ***/
-function getRandomQuotes (){
-const randomNumber= Math.floor(Math.random()*quotes.length);
-return quotes [randomNumber]
+function getRandomQuote (){
+const randomNumber= Math.floor(Math.getrandom()*quote.length);
+return quote [randomNumber]
 };
 
 /***
@@ -55,7 +55,7 @@ return quotes [randomNumber]
  * Additionally the source will be included alongside Quote and citation and year for the first quote in the array.
 ***/
 function printQuote (){
-let RandomQuote=getRandomQuotes();
+let RandomQuote=getRandomQuote();
 let html=`
 <p class="quote">  ${RandomQuote.quote} </p>
 <p class="source"> ${RandomQuote.source}`;
