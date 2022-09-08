@@ -44,7 +44,7 @@ source: 'Steve Jobs',
  * `getRandomQuote` function
  * The `getRandomQuote` function provides a random quote from the array above. 
 ***/
-function getRandomQuote (){
+function getRandomQuotes (){
 const randomNumber= Math.floor(Math.getrandom()*quote.length);
 return quote [randomNumber]
 };
@@ -55,7 +55,7 @@ return quote [randomNumber]
  * Additionally the source will be included alongside Quote and citation and year for the first quote in the array.
 ***/
 function printQuote (){
-let RandomQuote=getRandomQuote();
+let RandomQuote=getRandomQuotes();
 let html=`
 <p class="quote">  ${RandomQuote.quote} </p>
 <p class="source"> ${RandomQuote.source}`;
