@@ -13,23 +13,23 @@ project 1 - A Random Quote Generator
 ***/
 const quote= [
 {quote:"The greatest glory in living lies not in never falling, but in rising every time we fall.",
-source:"-Nelson Mandela",
+source:"Nelson Mandela",
 citation:"https://blog.hubspot.com/sales/famous-quotes",
 year:"2007",
 },
 
 {quote:"The way to get started is to quit talking and begin doing.",
-source: '-Walt Disney',
+source: 'Walt Disney',
 //citation:
 //year:
 },
 {quote:"If life were predictable it would cease to be life, and be without flavor.",
-source:'-Elenor Roosevelt',
+source:'Elenor Roosevelt',
 //citation:
 //year:
 },
 {quote:"Life is what happens when you're busy making other plans.",
-source: '-John Lennon',
+source: 'John Lennon',
 //citation:
 //year:
 },
@@ -45,7 +45,7 @@ source: 'Steve Jobs',
  * The `getRandomQuote` function provides a random quote from the array above. 
 ***/
 function getRandomQuotes (){
-const randomNumber= Math.floor(Math.getrandom()*quote.length);
+const randomNumber= Math.floor(Math.random()*quote.length);
 return quote [randomNumber]
 };
 
@@ -61,7 +61,7 @@ let html=`
 <p class="source"> ${RandomQuote.source}`;
 
 if (RandomQuote.citation){
-  html+= `<span class="citation">${RandomQuote.citation},</span>`};
+  html+= `<span class="citation">${RandomQuote.citation}</span>`};
 if(RandomQuote.year){
     html+= `<span class = "year"> ${RandomQuote.year}</span>`};
 if (RandomQuote.tags){
